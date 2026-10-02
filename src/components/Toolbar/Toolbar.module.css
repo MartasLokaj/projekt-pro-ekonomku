@@ -1,0 +1,71 @@
+.toolbar {
+  position: sticky;
+  top: var(--header-h);
+  z-index: 20;
+  height: var(--toolbar-h);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.inner {
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(8px, 3vw, 24px);
+  display: flex;
+  align-items: center;
+  /* Mode switch on the left, action icons on the right. */
+  justify-content: space-between;
+  gap: clamp(8px, 2vw, 18px);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  /* Stays on the right even when there is no mode switch. */
+  margin-left: auto;
+  gap: clamp(2px, 1.5vw, 14px);
+}
+
+
+
+.button {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  color: var(--text);
+  transition:
+    background-color 0.15s ease,
+    transform 0.12s ease,
+    opacity 0.15s ease;
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.9);
+}
+
+.button:disabled {
+  opacity: 0.35;
+}
+
+@media (hover: hover) {
+  .button:not(:disabled):hover {
+    background: var(--btn-hover);
+  }
+}
+
+@media (max-width: 600px) {
+  .button {
+    width: 40px;
+    height: 40px;
+  }
+  .button svg {
+    width: 25px;
+    height: 25px;
+  }
+}

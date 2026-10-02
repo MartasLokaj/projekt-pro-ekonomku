@@ -1,0 +1,243 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   Design tokens
+   Light theme on :root, dark theme via prefers-color-scheme (unless the user
+   forced light) or an explicit [data-theme="dark"] on <html>.
+   ────────────────────────────────────────────────────────────────────────── */
+:root {
+  color-scheme: light;
+
+  /* Franklin Gothic for everything (like the original), a condensed slab for the big title. */
+  --font: 'Libre Franklin Variable', 'Libre Franklin', 'Franklin Gothic Medium', 'Helvetica Neue', Arial, system-ui, sans-serif;
+  --font-display: 'Rokkitt Variable', 'Rokkitt', Rockwell, 'Roboto Slab', Georgia, serif;
+
+  --bg: #fbfbf8;
+  --surface: #ffffff;
+  --text: #121212;
+  --text-muted: #6b6a61;
+  --border: #e0dfd6;
+  --focus: #3b6fd6;
+
+  --tile-bg: #efefe6;
+  --tile-hover: #e4e3d7;
+  --tile-text: #121212;
+  --tile-selected-bg: #5a594e;
+  --tile-selected-text: #ffffff;
+  --tile-selected-border: #5a594e;
+  --tile-shadow: 0 1px 0 rgb(0 0 0 / 0.03), 0 1px 3px rgb(0 0 0 / 0.07);
+  --tile-shadow-hover: 0 2px 6px rgb(0 0 0 / 0.1);
+
+  --btn-text: #121212;
+  --btn-border: #121212;
+  --btn-primary-bg: #121212;
+  --btn-primary-text: #ffffff;
+  --btn-disabled: #a3a299;
+  --btn-hover: rgb(0 0 0 / 0.05);
+
+  --dot: #5a594e;
+  --toast-bg: #121212;
+  --toast-text: #ffffff;
+  --overlay: rgb(18 18 18 / 0.42);
+  --skeleton: #e9e8df;
+  --skeleton-shine: #f5f4ee;
+  --modal-shadow: 0 24px 64px rgb(0 0 0 / 0.18), 0 2px 8px rgb(0 0 0 / 0.08);
+
+  --yellow: #f9df6d;
+  --green: #a0c35a;
+  --blue: #b0c4ef;
+  --purple: #ba81c5;
+  --on-category: #121212;
+
+  /* Circular Words (Wordle) colours */
+  --sl-correct: #6aaa64;
+  --sl-present: #c9b458;
+  --sl-accent: #2fa9a3;
+  --sl-absent: #787c7e;
+  --sl-empty-border: #d3d6da;
+  --sl-filled-border: #878a8c;
+  --sl-tile-text: #1a1a1b;
+  --sl-revealed-text: #ffffff;
+  --sl-key-bg: #d3d6da;
+  --sl-key-text: #1a1a1b;
+  --sl-key-hover: #c4c7cc;
+
+  /* Welcome screen backgrounds (one per game) */
+  --welcome-spojeni: #cdc3f1;
+  --welcome-slovo: #e3e3e1;
+
+  --radius: 8px;
+  --gap: 8px;
+  --board-max: 624px;
+  --tile-h: clamp(64px, 19vw, 80px);
+  --header-h: 56px;
+  --toolbar-h: 52px;
+  --page-max: 1240px;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --header-h: 52px;
+    --toolbar-h: 46px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: #121213;
+    --surface: #1c1c1e;
+    --text: #f3f2ec;
+    --text-muted: #a4a39a;
+    --border: #2f2f2d;
+    --focus: #8fb0ff;
+    --tile-bg: #2d2d2a;
+    --tile-hover: #373733;
+    --tile-text: #f3f2ec;
+    --tile-selected-bg: #e9e7da;
+    --tile-selected-text: #121212;
+    --tile-selected-border: #e9e7da;
+    --tile-shadow: 0 1px 2px rgb(0 0 0 / 0.5);
+    --tile-shadow-hover: 0 3px 8px rgb(0 0 0 / 0.55);
+    --btn-text: #f3f2ec;
+    --btn-border: #f3f2ec;
+    --btn-primary-bg: #f3f2ec;
+    --btn-primary-text: #121213;
+    --btn-disabled: #6c6b64;
+    --btn-hover: rgb(255 255 255 / 0.06);
+    --dot: #d2d0c3;
+    --toast-bg: #f3f2ec;
+    --toast-text: #121213;
+    --overlay: rgb(0 0 0 / 0.6);
+    --skeleton: #252523;
+    --skeleton-shine: #302f2c;
+    --modal-shadow: 0 24px 64px rgb(0 0 0 / 0.6);
+    --yellow: #d9c055;
+    --green: #8aac4b;
+    --blue: #93aadf;
+    --purple: #a970b5;
+    --on-category: #121212;
+    --sl-correct: #538d4e;
+    --sl-present: #b59f3b;
+    --sl-accent: #2b8f8b;
+    --sl-absent: #3a3a3c;
+    --sl-empty-border: #3a3a3c;
+    --sl-filled-border: #565758;
+    --sl-tile-text: #f8f8f8;
+    --sl-key-bg: #818384;
+    --sl-key-text: #f8f8f8;
+    --sl-key-hover: #9a9c9d;
+    --welcome-spojeni: #25213a;
+    --welcome-slovo: #1f1f21;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #121213;
+  --surface: #1c1c1e;
+  --text: #f3f2ec;
+  --text-muted: #a4a39a;
+  --border: #2f2f2d;
+  --focus: #8fb0ff;
+  --tile-bg: #2d2d2a;
+  --tile-hover: #373733;
+  --tile-text: #f3f2ec;
+  --tile-selected-bg: #e9e7da;
+  --tile-selected-text: #121212;
+  --tile-selected-border: #e9e7da;
+  --tile-shadow: 0 1px 2px rgb(0 0 0 / 0.5);
+  --tile-shadow-hover: 0 3px 8px rgb(0 0 0 / 0.55);
+  --btn-text: #f3f2ec;
+  --btn-border: #f3f2ec;
+  --btn-primary-bg: #f3f2ec;
+  --btn-primary-text: #121213;
+  --btn-disabled: #6c6b64;
+  --btn-hover: rgb(255 255 255 / 0.06);
+  --dot: #d2d0c3;
+  --toast-bg: #f3f2ec;
+  --toast-text: #121213;
+  --overlay: rgb(0 0 0 / 0.6);
+  --skeleton: #252523;
+  --skeleton-shine: #302f2c;
+  --modal-shadow: 0 24px 64px rgb(0 0 0 / 0.6);
+  --yellow: #d9c055;
+  --green: #8aac4b;
+  --blue: #93aadf;
+  --purple: #a970b5;
+  --on-category: #121212;
+  --sl-correct: #538d4e;
+  --sl-present: #b59f3b;
+  --sl-accent: #2b8f8b;
+  --sl-absent: #3a3a3c;
+  --sl-empty-border: #3a3a3c;
+  --sl-filled-border: #565758;
+  --sl-tile-text: #f8f8f8;
+  --sl-key-bg: #818384;
+  --sl-key-text: #f8f8f8;
+  --sl-key-hover: #9a9c9d;
+  --welcome-spojeni: #25213a;
+  --welcome-slovo: #1f1f21;
+}
+
+/* ── Reset & base ─────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + var(--toolbar-h));
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

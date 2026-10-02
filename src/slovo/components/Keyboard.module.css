@@ -1,0 +1,78 @@
+.keyboard {
+  width: 100%;
+  max-width: 500px;
+  display: grid;
+  gap: var(--sl-kb-gap);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.key {
+  position: relative;
+  flex: 1 1 0;
+  max-width: 43px;
+  min-width: 0;
+  height: var(--sl-key-h);
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  background: var(--sl-key-bg);
+  color: var(--sl-key-text);
+  font-size: clamp(13px, 3.6vw, 17px);
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-touch-callout: none;
+  transition:
+    background-color 0.15s ease,
+    transform 0.08s ease;
+}
+
+.key:active {
+  transform: scale(0.94);
+}
+
+@media (hover: hover) {
+  .key:not([data-state]):hover {
+    background: var(--sl-key-hover);
+  }
+}
+
+.key[data-state='correct'] {
+  background: var(--sl-correct);
+  color: var(--sl-revealed-text);
+}
+.key[data-state='present'] {
+  background: var(--sl-present);
+  color: var(--sl-revealed-text);
+}
+.key[data-state='accent'] {
+  background: var(--sl-accent);
+  color: var(--sl-revealed-text);
+}
+.key[data-state='absent'] {
+  background: var(--sl-absent);
+  color: var(--sl-revealed-text);
+}
+
+.wide {
+  flex: 1.5 1 0;
+  max-width: 65px;
+}
+
+.enter {
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+/* Half a key on each side of the middle row (A–L), like a real keyboard. */
+.spacer {
+  flex: 0.5 1 0;
+  max-width: 21px;
+}

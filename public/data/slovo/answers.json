@@ -1,0 +1,713 @@
+{
+ "$comment": "Circular Words: the answers in play order (word N = task N). Each word has an English explanation that is shown after the game. Add new words at the end; reordering changes the task numbers.",
+ "words": [
+  {
+   "word": "reuse",
+   "type": "verb",
+   "meaning": "To use something again instead of throwing it away after one use.",
+   "circular": "Reuse is one of the “inner loops” of the circular economy: a refillable bottle or a school-uniform swap keeps a product in use without making anything new."
+  },
+  {
+   "word": "earth",
+   "type": "noun",
+   "meaning": "Our planet, the world we live on.",
+   "circular": "The handbooks talk about “Spaceship Earth” and Earth Overshoot Day – the day each year when we have used more resources than the Earth can renew in a whole year."
+  },
+  {
+   "word": "glass",
+   "type": "noun",
+   "meaning": "A hard, clear material made by melting sand.",
+   "circular": "Glass can be melted and recycled again and again without losing quality, so glass bottles and jars go into their own sorting bin."
+  },
+  {
+   "word": "bread",
+   "type": "noun",
+   "meaning": "A common food made from flour, water and yeast and baked in an oven.",
+   "circular": "Bread is one of the most wasted foods. Some breweries now use surplus bread from bakeries to brew beer – an example of food upcycling."
+  },
+  {
+   "word": "cheap",
+   "type": "adjective",
+   "meaning": "Costing little money; often also low in quality.",
+   "circular": "The linear economy runs on cheap materials, cheap energy and cheap labour. Fast fashion makes clothes so cheap that people treat them as disposable."
+  },
+  {
+   "word": "green",
+   "type": "adjective",
+   "meaning": "Having the colour of grass; also: good for the environment.",
+   "circular": "The European Green Deal is the EU’s plan to make Europe climate-neutral by 2050. Watch out for “greenwashing” – false green claims on products."
+  },
+  {
+   "word": "waste",
+   "type": "noun",
+   "meaning": "Things we throw away because we no longer want or need them.",
+   "circular": "The linear economy follows “take – make – waste”. A circular economy designs waste out from the start and treats what is left as a resource."
+  },
+  {
+   "word": "water",
+   "type": "noun",
+   "meaning": "The clear liquid in rivers, lakes and seas that all life needs.",
+   "circular": "Making products uses huge amounts of water, for example to grow cotton for clothes. Wasting food or clothes also wastes the water used to make them."
+  },
+  {
+   "word": "metal",
+   "type": "noun",
+   "meaning": "A hard, shiny material such as iron, copper, gold or aluminium.",
+   "circular": "Metals can be recycled many times. Old phones and laptops contain gold, silver and copper, which is why e-waste is called an “urban mine”."
+  },
+  {
+   "word": "fresh",
+   "type": "adjective",
+   "meaning": "Recently made, picked or bought; not old, frozen or spoiled.",
+   "circular": "Fresh food goes off quickly, so people often buy too much and throw it away. Households cause more than half of all food waste in the EU."
+  },
+  {
+   "word": "price",
+   "type": "noun",
+   "meaning": "The amount of money you have to pay for something.",
+   "circular": "A deposit adds a small price to bottles and cans that you get back when you return them. Germany’s “Pfand” system collects over 98% of bottles this way."
+  },
+  {
+   "word": "right",
+   "type": "noun",
+   "meaning": "Something that the law says you are allowed to have or do.",
+   "circular": "The EU “Right to Repair” makes producers keep products like phones and tablets easy to fix, with spare parts available for years."
+  },
+  {
+   "word": "cycle",
+   "type": "noun",
+   "meaning": "A series of events that repeat in the same order.",
+   "circular": "The butterfly diagram has two cycles: the biological cycle (food, wood and cotton return to nature) and the technical cycle (metals and plastics are kept in use)."
+  },
+  {
+   "word": "ocean",
+   "type": "noun",
+   "meaning": "One of the very large areas of salt water that cover most of the Earth.",
+   "circular": "Millions of tonnes of plastic end up in the ocean, where it harms sea animals and breaks into microplastics that enter the food chain."
+  },
+  {
+   "word": "paper",
+   "type": "noun",
+   "meaning": "Thin material made from wood, used for writing, printing and packaging.",
+   "circular": "Paper is made from wood fibres and can be recycled several times. Funny fact: the plastic bag was invented to replace paper bags and save trees!"
+  },
+  {
+   "word": "fruit",
+   "type": "noun",
+   "meaning": "The sweet part of a plant that holds its seeds, such as an apple or an orange.",
+   "circular": "A lot of fruit is wasted only because it looks “ugly”. Leftover fruit pulp from juice factories can be upcycled into healthy snacks."
+  },
+  {
+   "word": "brand",
+   "type": "noun",
+   "meaning": "The name of a product or company that people recognise.",
+   "circular": "Some fashion brands now offer repair services, take-back schemes or resale platforms, so that clothes stay in use for longer."
+  },
+  {
+   "word": "index",
+   "type": "noun",
+   "meaning": "A number or score that shows the level of something.",
+   "circular": "France’s repairability index gives products like phones a score out of 10, so buyers can see how easy they are to fix."
+  },
+  {
+   "word": "share",
+   "type": "verb",
+   "meaning": "To use something together with other people.",
+   "circular": "Sharing is one of the tightest loops of the circular economy: car-sharing, tool libraries and shared wardrobes mean fewer new products have to be made."
+  },
+  {
+   "word": "toxic",
+   "type": "adjective",
+   "meaning": "Poisonous; harmful to people, animals or nature.",
+   "circular": "E-waste contains toxic substances like lead and mercury. Burning it in the open releases toxic fumes that are dangerous, especially for children."
+  },
+  {
+   "word": "steel",
+   "type": "noun",
+   "meaning": "A strong metal made from iron, used for buildings, cars and tools.",
+   "circular": "Steel and cement cause a big share of global emissions. Recovering steel from old buildings and recycling it saves energy and raw materials."
+  },
+  {
+   "word": "apple",
+   "type": "noun",
+   "meaning": "A round fruit with red, green or yellow skin.",
+   "circular": "In the biological cycle, apple cores from school lunch go into a compost bin, and the compost later feeds the soil in the school garden."
+  },
+  {
+   "word": "trend",
+   "type": "noun",
+   "meaning": "A new style or fashion that many people follow for a while.",
+   "circular": "Fast fashion follows trends so quickly that clothes are thrown away after a short time. The EU campaign “ReSet the Trend” asks young people to change this."
+  },
+  {
+   "word": "score",
+   "type": "noun",
+   "meaning": "A number that shows how good or bad something is.",
+   "circular": "A repair score tells you how easy a product is to fix. Would you still buy a phone with a repair score of 3 out of 10?"
+  },
+  {
+   "word": "value",
+   "type": "noun",
+   "meaning": "How much something is worth, in money or in usefulness.",
+   "circular": "A circular economy keeps products and materials at their highest value for as long as possible, instead of letting them lose all value as waste."
+  },
+  {
+   "word": "solar",
+   "type": "adjective",
+   "meaning": "Coming from the sun or using the energy of the sun.",
+   "circular": "Solar panels make renewable electricity. A circular economy should run on renewable energy like solar and wind instead of fossil fuels."
+  },
+  {
+   "word": "phone",
+   "type": "noun",
+   "meaning": "A device you use to call, send messages and use apps.",
+   "circular": "A smartphone contains over 60 chemical elements. Modular phones can be repaired by swapping one part, and old phones should be recycled, not left in a drawer."
+  },
+  {
+   "word": "label",
+   "type": "noun",
+   "meaning": "A small piece of paper or text on a product that gives information about it.",
+   "circular": "Labels help us sort waste into the right bin and understand food dates: “use by” is about safety, “best before” is only about quality."
+  },
+  {
+   "word": "store",
+   "type": "noun",
+   "meaning": "A shop; as a verb, to keep something for later.",
+   "circular": "IKEA buys back used furniture for store credit and sells it again. Storing food properly at home also helps to stop food waste."
+  },
+  {
+   "word": "chain",
+   "type": "noun",
+   "meaning": "A row of connected things, like the metal rings of a chain.",
+   "circular": "A supply chain or value chain is every step from raw material to finished product. Circular thinking looks at the whole chain, not just at the shop."
+  },
+  {
+   "word": "urban",
+   "type": "adjective",
+   "meaning": "Connected with towns and cities.",
+   "circular": "Old electronics are called “urban mines” because they are full of valuable metals that can be recovered instead of digging new mines."
+  },
+  {
+   "word": "jeans",
+   "type": "noun (plural)",
+   "meaning": "Trousers made of denim.",
+   "circular": "The company MUD Jeans lets customers lease jeans for a monthly fee. When the jeans wear out, they go back to be recycled."
+  },
+  {
+   "word": "shelf",
+   "type": "noun",
+   "meaning": "A flat board on a wall or in a shop where you put things.",
+   "circular": "“Shelf life” is how long food stays good. Packaging can extend it: a wrapped cucumber stays fresh for up to 14 days instead of 3."
+  },
+  {
+   "word": "habit",
+   "type": "noun",
+   "meaning": "Something you do regularly, often without thinking.",
+   "circular": "Small daily habits – a reusable bottle, sorting waste, buying less – add up. In Germany, returning bottles for a deposit has become a cultural habit."
+  },
+  {
+   "word": "model",
+   "type": "noun",
+   "meaning": "A simple picture or plan that explains how something works.",
+   "circular": "The butterfly model shows the circular economy. The old linear model is “take – make – dispose”; new business models include renting and repair."
+  },
+  {
+   "word": "flood",
+   "type": "noun",
+   "meaning": "A large amount of water covering land that is usually dry.",
+   "circular": "In the 1990s, plastic bags blocked drains in Bangladesh and made floods much worse. In 2002 it became the first country to ban thin plastic bags."
+  },
+  {
+   "word": "denim",
+   "type": "noun",
+   "meaning": "Strong cotton cloth, usually blue, used to make jeans.",
+   "circular": "Durable materials like denim suit a circular wardrobe because they last a long time and can be repaired, rented or resold."
+  },
+  {
+   "word": "smell",
+   "type": "verb",
+   "meaning": "To notice something with your nose.",
+   "circular": "Before you throw away food after its “best before” date, try the Look, Smell, Taste test – it is often still perfectly safe to eat."
+  },
+  {
+   "word": "local",
+   "type": "adjective",
+   "meaning": "From or in the area near you.",
+   "circular": "Local repair shops, Repair Cafés and local food reduce transport and create jobs in your own community."
+  },
+  {
+   "word": "close",
+   "type": "verb",
+   "meaning": "To shut something; to bring something to an end.",
+   "circular": "To “close the loop” means bringing materials back into use, for example turning returned plastic bottles into new food-grade bottles."
+  },
+  {
+   "word": "coral",
+   "type": "noun",
+   "meaning": "A hard material formed by tiny sea animals; it builds reefs.",
+   "circular": "Plastic debris covers and damages coral reefs, which are home to a huge variety of sea life."
+  },
+  {
+   "word": "shirt",
+   "type": "noun",
+   "meaning": "A piece of clothing for the top part of the body.",
+   "circular": "The “learning journey of a T-shirt” follows it from a cotton field to a factory, to your wardrobe and finally to a landfill – or, better, to reuse."
+  },
+  {
+   "word": "taste",
+   "type": "verb",
+   "meaning": "To try food or drink in your mouth to find out its flavour.",
+   "circular": "The last step of the Look, Smell, Taste test: if “best before” food looks and smells fine, taste a little. Never do this with “use by” food!"
+  },
+  {
+   "word": "loops",
+   "type": "noun (plural)",
+   "meaning": "Shapes like circles; ways that lead back to the beginning.",
+   "circular": "In the butterfly diagram, the inner loops (sharing, repair, reuse) are better than the outer loop (recycling) because they keep the whole product."
+  },
+  {
+   "word": "algae",
+   "type": "noun (plural)",
+   "meaning": "Very simple plants that grow in water, like seaweed.",
+   "circular": "Designers are making new biodegradable materials based on algae and fungi, which can safely return to nature at the end of their life."
+  },
+  {
+   "word": "straw",
+   "type": "noun",
+   "meaning": "A thin tube for drinking.",
+   "circular": "Plastic straws, cutlery and plates are banned in the EU by the Single-Use Plastics Directive, because paper or reusable alternatives exist."
+  },
+  {
+   "word": "trash",
+   "type": "noun",
+   "meaning": "Things you throw away; rubbish.",
+   "circular": "The aim of the circular economy is to keep materials out of the trash. “Wish-cycling” – putting the wrong things in the recycling bin – makes recycling harder."
+  },
+  {
+   "word": "fungi",
+   "type": "noun (plural)",
+   "meaning": "Living things such as mushrooms and moulds.",
+   "circular": "Fungi break down dead plants and return nutrients to the soil. Some new biodegradable materials are even based on fungi."
+  },
+  {
+   "word": "cable",
+   "type": "noun",
+   "meaning": "A wire covered in plastic that carries electricity or data.",
+   "circular": "Before the EU common charger law, homes had drawers full of different cables. Now new phones, tablets and cameras all use USB-C, which cuts e-waste."
+  },
+  {
+   "word": "renew",
+   "type": "verb",
+   "meaning": "To make something new again, or to replace it.",
+   "circular": "Renewable resources like wood or solar energy renew themselves naturally. The linear economy takes resources faster than nature can renew them."
+  },
+  {
+   "word": "screw",
+   "type": "noun",
+   "meaning": "A small metal pin with a spiral edge, used to hold things together.",
+   "circular": "Fairphone holds its phones together with screws, not glue, so users can open them and replace a broken battery or camera themselves."
+  },
+  {
+   "word": "lease",
+   "type": "verb",
+   "meaning": "To pay to use something for a period of time without owning it.",
+   "circular": "Leasing is part of “product-as-a-service”: you pay to use jeans or a washing machine, and the company stays responsible for repair and recycling."
+  },
+  {
+   "word": "brick",
+   "type": "noun",
+   "meaning": "A block of baked clay used for building walls.",
+   "circular": "In circular construction, builders recover bricks, metal and wood from old buildings and use them again in new ones."
+  },
+  {
+   "word": "spare",
+   "type": "adjective",
+   "meaning": "Extra; kept in case it is needed.",
+   "circular": "Spare parts make repair possible. Under the EU Right to Repair, producers must keep spare parts available for years."
+  },
+  {
+   "word": "fibre",
+   "type": "noun",
+   "meaning": "A thin thread of natural or artificial material (American spelling: fiber).",
+   "circular": "Clothes made from one type of fibre are easier to recycle than blends. Washing synthetic fibres releases microplastics, so new washing machines need filters."
+  },
+  {
+   "word": "scrap",
+   "type": "noun",
+   "meaning": "A small piece that is left over; also old metal collected for recycling.",
+   "circular": "Food scraps can become compost or animal feed, and scrap metal can be melted down and made into new products."
+  },
+  {
+   "word": "shred",
+   "type": "verb",
+   "meaning": "To cut or tear something into very small pieces.",
+   "circular": "Recycling often shreds metal or plastic into small pieces. The EU now bans companies from shredding or burning unsold clothes."
+  },
+  {
+   "word": "owner",
+   "type": "noun",
+   "meaning": "A person who something belongs to.",
+   "circular": "Selling or giving a product to a new owner, for example on Vinted, keeps it in use. Renting even gives you “access over ownership”."
+  },
+  {
+   "word": "throw",
+   "type": "verb",
+   "meaning": "To send something through the air with your hand; “throw away” = put in the rubbish.",
+   "circular": "The EU wants to end the “throw-away” culture. Instead of throwing things away, we can repair, share, donate or reuse them."
+  },
+  {
+   "word": "goods",
+   "type": "noun (plural)",
+   "meaning": "Things that are made to be sold.",
+   "circular": "Circular goods should be durable, reusable and repairable. Destroying new, unsold goods is the worst form of the linear economy."
+  },
+  {
+   "word": "inner",
+   "type": "adjective",
+   "meaning": "Inside, or close to the centre.",
+   "circular": "The inner loops of the butterfly diagram – sharing, maintaining and reusing – are the best options, because they save the most energy and materials."
+  },
+  {
+   "word": "river",
+   "type": "noun",
+   "meaning": "A large natural stream of water that flows to the sea.",
+   "circular": "Textile factories can pollute rivers with dyes and chemicals, and plastic waste in rivers is carried out to the sea."
+  },
+  {
+   "word": "juice",
+   "type": "noun",
+   "meaning": "The liquid from fruit or vegetables.",
+   "circular": "One orange can be used again and again: juice first, then oil from the peel, pulp for animal feed and finally compost. This is called a cascade."
+  },
+  {
+   "word": "style",
+   "type": "noun",
+   "meaning": "A particular way something looks, especially in fashion.",
+   "circular": "Fast fashion changes styles every few weeks. Slow fashion prefers timeless styles that people can wear for years."
+  },
+  {
+   "word": "union",
+   "type": "noun",
+   "meaning": "A group of countries or people joined together.",
+   "circular": "The European Union makes many circular-economy laws, such as the Right to Repair, the common charger and the ban on single-use plastics."
+  },
+  {
+   "word": "plant",
+   "type": "noun",
+   "meaning": "A living thing that grows in soil, like a tree or a flower.",
+   "circular": "Plastic in the soil blocks water and plant roots and lowers harvests. Compost helps plants grow and returns nutrients to the soil."
+  },
+  {
+   "word": "dress",
+   "type": "noun",
+   "meaning": "A piece of clothing for a woman or girl that covers the body and legs.",
+   "circular": "Rental services like Rent the Runway let people borrow a designer dress for a special occasion instead of buying one they wear only once."
+  },
+  {
+   "word": "avoid",
+   "type": "verb",
+   "meaning": "To stay away from something or stop it from happening.",
+   "circular": "Waste avoidance is the top of the waste hierarchy: the best waste is the waste that is never created."
+  },
+  {
+   "word": "lunch",
+   "type": "noun",
+   "meaning": "A meal you eat in the middle of the day.",
+   "circular": "School lunches can teach circular habits: right-sized portions, reusable boxes and composting leftovers for the school garden."
+  },
+  {
+   "word": "clean",
+   "type": "adjective",
+   "meaning": "Free from dirt, marks or harmful substances.",
+   "circular": "Recycling works best with clean, well-sorted materials. Bottles collected through a deposit system stay clean enough to become new food-grade bottles."
+  },
+  {
+   "word": "limit",
+   "type": "noun",
+   "meaning": "The greatest amount that is possible or allowed.",
+   "circular": "The planetary boundaries show the ecological limits of the Earth. Six of the nine boundaries have already been crossed."
+  },
+  {
+   "word": "beach",
+   "type": "noun",
+   "meaning": "An area of sand or small stones next to the sea.",
+   "circular": "Plastic bottle caps are among the top 5 items found on European beaches. That is why caps must now stay attached (tethered) to the bottle."
+  },
+  {
+   "word": "panel",
+   "type": "noun",
+   "meaning": "A flat piece of material that forms part of something bigger.",
+   "circular": "Photovoltaic (solar) panels make renewable electricity. At the end of their life they need special recycling."
+  },
+  {
+   "word": "stock",
+   "type": "noun",
+   "meaning": "A supply of goods kept in a shop or warehouse.",
+   "circular": "Because the EU bans destroying unsold clothes, brands have to manage their stock better and produce less."
+  },
+  {
+   "word": "grain",
+   "type": "noun",
+   "meaning": "The seeds of plants like wheat, rice or barley.",
+   "circular": "Spent grain from breweries is a by-product that can become animal feed or new food instead of being thrown away."
+  },
+  {
+   "word": "craft",
+   "type": "noun",
+   "meaning": "Making things skilfully with your hands.",
+   "circular": "Repair and upcycling need craft skills like sewing and fixing. The elimination of hands-on subjects at school means fewer young people learn them."
+  },
+  {
+   "word": "quota",
+   "type": "noun",
+   "meaning": "A fixed amount or target that must be reached.",
+   "circular": "Recycling quotas say how much waste must be recycled. But burning plastic for energy sometimes counts towards the quota, which can be misleading."
+  },
+  {
+   "word": "power",
+   "type": "noun",
+   "meaning": "Energy, especially electricity.",
+   "circular": "A circular fashion industry should be powered by renewable energy, and food waste can be turned into biogas to power homes or vehicles."
+  },
+  {
+   "word": "plate",
+   "type": "noun",
+   "meaning": "A flat dish you eat food from.",
+   "circular": "Plastic plates are banned in the EU. In France, fast-food restaurants must now serve dine-in meals on reusable plates."
+  },
+  {
+   "word": "mimic",
+   "type": "verb",
+   "meaning": "To copy the way something looks or behaves.",
+   "circular": "Nature has no waste – everything is used again. The biological cycle shows how a circular economy tries to mimic nature."
+  },
+  {
+   "word": "dairy",
+   "type": "noun",
+   "meaning": "Milk and food made from milk, like cheese and yoghurt.",
+   "circular": "Dairy by-products and other food scraps can be safely processed into animal feed instead of being wasted."
+  },
+  {
+   "word": "speed",
+   "type": "noun",
+   "meaning": "How fast something moves or happens.",
+   "circular": "Fast fashion has a “need for speed”, with new collections every few weeks. Slow fashion is the antidote: fewer, better clothes worn for years."
+  },
+  {
+   "word": "claim",
+   "type": "noun",
+   "meaning": "A statement that something is true.",
+   "circular": "A green claim says a product is good for the environment. If it is not true, it is greenwashing – so learn to check such claims."
+  },
+  {
+   "word": "heavy",
+   "type": "adjective",
+   "meaning": "Weighing a lot.",
+   "circular": "Heavy metals like lead, mercury and cadmium in e-waste are toxic and must be handled safely during recycling."
+  },
+  {
+   "word": "blend",
+   "type": "noun",
+   "meaning": "A mixture of different things.",
+   "circular": "Fabric blends like cotton mixed with polyester are hard to recycle. “Mono-material” clothes made of one fibre are much easier."
+  },
+  {
+   "word": "outer",
+   "type": "adjective",
+   "meaning": "On the outside; far from the centre.",
+   "circular": "Recycling is the outer loop of the butterfly diagram. It is better than landfill, but it destroys the product to save only the material."
+  },
+  {
+   "word": "empty",
+   "type": "adjective",
+   "meaning": "Containing nothing.",
+   "circular": "In a deposit return system you bring the empty bottle or can back to a reverse vending machine and get your money back."
+  },
+  {
+   "word": "wages",
+   "type": "noun (plural)",
+   "meaning": "Money that workers are paid for their work.",
+   "circular": "Sustainable fashion is also about people: garment workers should get fair wages and safe working conditions."
+  },
+  {
+   "word": "audit",
+   "type": "noun",
+   "meaning": "A careful official check of something.",
+   "circular": "An environmental audit checks how much waste, energy and water a company uses and where it can save resources."
+  },
+  {
+   "word": "fumes",
+   "type": "noun (plural)",
+   "meaning": "Smoke or gas that smells strong and can be dangerous.",
+   "circular": "Burning e-waste in the open releases toxic fumes that can travel far and harm people’s health, especially children’s."
+  },
+  {
+   "word": "cloth",
+   "type": "noun",
+   "meaning": "Material made by weaving cotton, wool or other fibres.",
+   "circular": "Europeans throw away about 11 kg of textiles per person every year. Old cloth can be repaired, upcycled into new items or recycled into fibres."
+  },
+  {
+   "word": "spine",
+   "type": "noun",
+   "meaning": "The line of bones down the middle of your back.",
+   "circular": "The “central spine” of the butterfly diagram is the line from raw materials down to waste. The loops on both sides keep materials away from the bottom."
+  },
+  {
+   "word": "loose",
+   "type": "adjective",
+   "meaning": "Not packed or fixed together.",
+   "circular": "France banned plastic packaging for around 30 kinds of fruit and vegetables, so shops now sell more loose produce."
+  },
+  {
+   "word": "labor",
+   "type": "noun",
+   "meaning": "Work, especially hard physical work (British spelling: labour).",
+   "circular": "Fast fashion depends on cheap labour, and child labour still exists in informal e-waste recycling. A fair circular economy protects workers."
+  },
+  {
+   "word": "floor",
+   "type": "noun",
+   "meaning": "The surface you walk on inside a building.",
+   "circular": "In doughnut economics, the social floor is the minimum everyone needs (food, water, housing) and the ecological ceiling is the most the planet can take."
+  },
+  {
+   "word": "drill",
+   "type": "verb",
+   "meaning": "To make a hole with a machine.",
+   "circular": "When we reuse and recycle, we do not need to mine, cut down forests or drill for new oil and gas so often."
+  },
+  {
+   "word": "wipes",
+   "type": "noun (plural)",
+   "meaning": "Small wet cloths used for cleaning.",
+   "circular": "Wet wipes contain plastic, so in the EU their packs must carry a warning label about the damage they do to the environment."
+  },
+  {
+   "word": "yield",
+   "type": "noun",
+   "meaning": "The amount of food that a farm or field produces.",
+   "circular": "Plastic in the soil can reduce crop yields, while regenerative farming and compost keep soils healthy and productive."
+  },
+  {
+   "word": "alter",
+   "type": "verb",
+   "meaning": "To change something, especially to make clothes fit.",
+   "circular": "Learning to alter and repair your own clothes helps them last longer. The most sustainable garment is the one you already own."
+  },
+  {
+   "word": "scale",
+   "type": "noun",
+   "meaning": "A machine for weighing things; also the size of something.",
+   "circular": "In Finland, a bin connected to a scale shows an emoji when you throw food away – it makes food waste visible."
+  },
+  {
+   "word": "mines",
+   "type": "noun (plural)",
+   "meaning": "Deep holes where people dig for coal, metals or stones.",
+   "circular": "Mining harms nature. Old smartphones are “urban mines”: some metals are more concentrated in them than in natural ores."
+  },
+  {
+   "word": "trees",
+   "type": "noun (plural)",
+   "meaning": "Tall plants with a wooden trunk and branches.",
+   "circular": "Wood is renewable if forests are managed well. School projects like planting trees help biodiversity and store carbon."
+  },
+  {
+   "word": "pizza",
+   "type": "noun",
+   "meaning": "An Italian food: flat bread with tomato, cheese and other toppings.",
+   "circular": "The handbook explains doughnut economics with a pizza party: everyone needs at least one slice (the floor), but nobody may take ten (the ceiling)."
+  },
+  {
+   "word": "shoes",
+   "type": "noun (plural)",
+   "meaning": "Things you wear on your feet.",
+   "circular": "The Polish company woshwosh cleans and repairs shoes and has given a second life to over 550,000 pairs."
+  },
+  {
+   "word": "parts",
+   "type": "noun (plural)",
+   "meaning": "Pieces that together make a machine or object.",
+   "circular": "Modular design lets you replace only the broken part, like a phone battery or camera, instead of the whole device."
+  },
+  {
+   "word": "whale",
+   "type": "noun",
+   "meaning": "A very large sea animal.",
+   "circular": "The EU common charger saves about 11,000 tonnes of e-waste a year – about the weight of 70 blue whales!"
+  },
+  {
+   "word": "snack",
+   "type": "noun",
+   "meaning": "A small amount of food eaten between meals.",
+   "circular": "Upcycled snacks use leftovers, such as fruit pulp from juice factories, to make new, healthy food."
+  },
+  {
+   "word": "board",
+   "type": "noun",
+   "meaning": "A flat piece of material; a circuit board holds the electronic parts of a device.",
+   "circular": "Circuit boards in phones and computers contain gold, silver, platinum and palladium, so they are valuable to recycle."
+  },
+  {
+   "word": "gases",
+   "type": "noun (plural)",
+   "meaning": "Substances like air that are neither solid nor liquid.",
+   "circular": "Greenhouse gases cause climate change. About half of global emissions come from extracting and processing raw materials."
+  },
+  {
+   "word": "slice",
+   "type": "noun",
+   "meaning": "A thin, flat piece cut from something bigger.",
+   "circular": "In the pizza-party example, the “floor” means everyone gets at least one slice, so nobody goes hungry."
+  },
+  {
+   "word": "dirty",
+   "type": "adjective",
+   "meaning": "Covered with dirt or marks; not clean.",
+   "circular": "Dirty or wrongly sorted waste contaminates recycling. Bottles returned for a deposit are not mixed with dirty trash, so they recycle well."
+  },
+  {
+   "word": "crops",
+   "type": "noun (plural)",
+   "meaning": "Plants grown by farmers, like wheat, corn or vegetables.",
+   "circular": "Some crops are never harvested because prices are too low or the vegetables look “ugly”. This is food loss – before the food even reaches a shop."
+  },
+  {
+   "word": "glued",
+   "type": "adjective",
+   "meaning": "Stuck together with glue.",
+   "circular": "Many smartphones are glued shut, so they are almost impossible to repair. Circular design uses screws instead of glue."
+  },
+  {
+   "word": "fuels",
+   "type": "noun (plural)",
+   "meaning": "Materials like coal, oil or gas that are burned for energy.",
+   "circular": "Plastics and synthetic fibres like polyester are made from fossil fuels, so they add to greenhouse gas emissions."
+  },
+  {
+   "word": "meals",
+   "type": "noun (plural)",
+   "meaning": "The food eaten at one time, like breakfast or dinner.",
+   "circular": "Apps like Too Good To Go and food banks rescue meals that shops and restaurants would otherwise throw away."
+  },
+  {
+   "word": "reefs",
+   "type": "noun (plural)",
+   "meaning": "Lines of rock or coral just under the surface of the sea.",
+   "circular": "Plastic debris smothers coral reefs and mangroves and reduces the variety of life in the ocean."
+  },
+  {
+   "word": "soils",
+   "type": "noun (plural)",
+   "meaning": "The top layer of earth in which plants grow.",
+   "circular": "Regenerative farming and compost rebuild soils, while plastic waste and chemicals damage them."
+  },
+  {
+   "word": "scope",
+   "type": "noun",
+   "meaning": "The range or area that something covers.",
+   "circular": "“Scope 3 emissions” are all the emissions in a company’s supply chain. They are hard to measure but often the biggest part."
+  }
+ ]
+}

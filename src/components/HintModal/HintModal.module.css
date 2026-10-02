@@ -1,0 +1,58 @@
+.intro {
+  margin-bottom: 18px;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.row {
+  min-height: 52px;
+  display: grid;
+  grid-template-columns: 22px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px 8px 14px;
+  border-radius: 10px;
+  background: var(--tile-bg);
+}
+
+.swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  background: var(--swatch);
+}
+
+.level {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 750;
+  text-align: right;
+}
+
+.reveal {
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid var(--btn-border);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.15s ease;
+}
+
+@media (hover: hover) {
+  .reveal:hover {
+    background: var(--btn-hover);
+  }
+}

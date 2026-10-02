@@ -1,0 +1,53 @@
+.meta {
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.summary {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 5px;
+}
+
+.gridRow {
+  display: flex;
+  gap: 5px;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.copy {
+  height: 48px;
+  min-width: 220px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  font-size: 16px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+@media (hover: hover) {
+  .copy:hover {
+    opacity: 0.88;
+  }
+}
+
+.copyInner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

@@ -1,0 +1,28 @@
+.row {
+  grid-column: 1 / -1;
+  height: var(--tile-h);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 0 14px;
+  border-radius: var(--radius);
+  color: var(--on-category);
+  text-align: center;
+  box-shadow: var(--tile-shadow);
+  transition: background-color 0.3s ease;
+}
+
+.name {
+  font-size: clamp(14px, 3.7vw, 19px);
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+}
+
+.words {
+  font-size: clamp(13px, 3.5vw, 18px);
+  font-weight: 450;
+  line-height: 1.2;
+}

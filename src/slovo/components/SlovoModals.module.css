@@ -1,0 +1,162 @@
+/* Result grid in the share summary (5 columns of small squares). */
+.shareGrid {
+  display: grid;
+  gap: 4px;
+}
+
+.shareRow {
+  display: flex;
+  gap: 4px;
+}
+
+.shareSquare {
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+}
+
+.answerLabel {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.answer {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin: 4px 0 6px;
+}
+
+/* How to play examples */
+.examples {
+  display: grid;
+  gap: 14px;
+}
+
+.example {
+  display: grid;
+  gap: 6px;
+}
+
+.exampleRow {
+  display: flex;
+  gap: 4px;
+}
+
+.exampleText {
+  font-size: 14px;
+}
+
+.note {
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+/* Hint */
+ul > li.hintRow {
+  grid-template-columns: auto 1fr;
+}
+
+.hintText {
+  font-size: 15px;
+}
+
+button.hintButton {
+  margin-top: 16px;
+  width: 100%;
+  height: 44px;
+}
+
+/* After the game: what the word means */
+.info {
+  width: 100%;
+  margin: 12px 0 4px;
+  padding: 14px 16px 16px;
+  display: grid;
+  gap: 4px;
+  border-radius: 12px;
+  border-left: 4px solid var(--sl-correct);
+  background: var(--tile-bg);
+  text-align: left;
+}
+
+.infoTitle,
+.infoLabel {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.infoLabel {
+  margin-top: 8px;
+}
+
+.infoWord {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.infoWord strong {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.infoType {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.infoText {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.nextWrap {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 6px;
+}
+
+.nextButton {
+  height: 50px;
+  min-width: 220px;
+  padding: 0 22px 0 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 999px;
+  /* A darker green than the tiles, so the white text stays readable. */
+  background: #43803e;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  transition: filter 0.2s ease;
+}
+
+@media (hover: hover) {
+  .nextButton:hover {
+    filter: brightness(1.08);
+  }
+}
+
+/* All words */
+.listWord {
+  letter-spacing: 0.08em;
+}
+
+.listHidden {
+  color: var(--text-muted);
+  font-weight: 500;
+}

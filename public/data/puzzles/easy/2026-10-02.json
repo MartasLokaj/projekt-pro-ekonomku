@@ -1,0 +1,11 @@
+{
+  "$schema": "../../puzzle.schema.json",
+  "id": "easy-2026-10-02",
+  "date": "2026-10-02",
+  "categories": [
+    { "id": "r-strategies", "name": "R strategies", "difficulty": "yellow", "words": ["Reduce", "Reuse", "Repair", "Recycle"] },
+    { "id": "natural-resources", "name": "Natural resources", "difficulty": "green", "words": ["Timber", "Ore", "Sand", "Oil"] },
+    { "id": "use-without-owning", "name": "Use it without owning it", "difficulty": "blue", "words": ["Rent", "Lease", "Share", "Borrow"] },
+    { "id": "blank-cycle", "name": "___ cycle", "difficulty": "purple", "words": ["Life", "Carbon", "Water", "Up"] }
+  ]
+}

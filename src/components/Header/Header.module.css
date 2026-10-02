@@ -1,0 +1,234 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  height: var(--header-h);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.inner {
+  height: 100%;
+  padding: 0 max(12px, env(safe-area-inset-right)) 0 max(10px, env(safe-area-inset-left));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.right {
+  gap: 10px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 8px 6px 4px;
+  border-radius: 8px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.iconButton {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  color: var(--text);
+  transition:
+    background-color 0.15s ease,
+    transform 0.12s ease;
+}
+
+.iconButton:active {
+  transform: scale(0.92);
+}
+
+@media (hover: hover) {
+  .iconButton:hover {
+    background: var(--btn-hover);
+  }
+}
+
+.iconSwap {
+  display: inline-grid;
+  place-items: center;
+}
+
+.signIn {
+  height: 40px;
+  padding: 0 18px;
+  border: 1px solid var(--text);
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background-color 0.15s ease;
+}
+
+@media (hover: hover) {
+  .signIn:hover {
+    background: var(--btn-hover);
+  }
+}
+
+@media (max-width: 420px) {
+  .signIn {
+    height: 34px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+  .title {
+    font-size: 22px;
+  }
+}
+
+/* "Circular Words" is a long title: keep "Sign in" on one line and let the title shrink. */
+.signIn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.left,
+.brand,
+.brandInner {
+  min-width: 0;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Long game names shrink with the screen so they never get cut off. */
+@media (max-width: 420px) {
+  .titleLong {
+    font-size: clamp(15px, calc((100vw - 252px) / 7.1), 22px);
+  }
+}
+
+.menuWrap {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  min-width: 264px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--modal-shadow);
+  transform-origin: top left;
+}
+
+.menuItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 550;
+  text-align: left;
+  transition: background-color 0.12s ease;
+}
+
+.menuItem:disabled {
+  color: var(--text-muted);
+}
+
+@media (hover: hover) {
+  .menuItem:not(:disabled):hover {
+    background: var(--btn-hover);
+  }
+}
+
+.menuIcon {
+  display: inline-grid;
+  place-items: center;
+  color: var(--text-muted);
+}
+
+.soon {
+  margin-left: auto;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: var(--tile-bg);
+  color: var(--text-muted);
+}
+
+.brandInner {
+  display: inline-flex;
+  align-items: center;
+  gap: inherit;
+}
+
+.menuHeading {
+  padding: 8px 12px 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.gameItem {
+  padding-block: 8px;
+}
+
+.gameActive {
+  background: var(--tile-bg);
+}
+
+.gameText {
+  display: grid;
+  gap: 1px;
+  line-height: 1.2;
+}
+
+.gameTagline {
+  font-size: 12px;
+  font-weight: 450;
+  color: var(--text-muted);
+}
+
+.gameCheck {
+  margin-left: auto;
+  flex: none;
+}
+
+.menuDivider {
+  height: 1px;
+  margin: 6px 8px;
+  background: var(--border);
+}

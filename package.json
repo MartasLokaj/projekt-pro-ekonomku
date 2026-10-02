@@ -1,0 +1,35 @@
+{
+  "name": "spojeni",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -b",
+    "lint": "oxlint"
+  },
+  "dependencies": {
+    "@fontsource-variable/libre-franklin": "^5.3.0",
+    "@fontsource-variable/rokkitt": "^5.3.0",
+    "canvas-confetti": "^1.9.4",
+    "motion": "^13.4.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  },
+  "description": "Links and Word of the Day – English daily word games about the circular economy"
+}

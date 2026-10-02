@@ -1,0 +1,27 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 26px;
+  font-size: clamp(16px, 4.2vw, 18px);
+  color: var(--text-muted);
+}
+
+.label {
+  font-weight: 450;
+}
+
+.dots {
+  display: inline-flex;
+  gap: 10px;
+  min-width: calc(4 * 16px + 3 * 10px);
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--dot);
+  transition: background-color 0.3s ease;
+}

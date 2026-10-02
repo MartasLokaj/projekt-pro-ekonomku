@@ -1,0 +1,166 @@
+/*
+ * Tile size adapts to the screen: never wider than the column, and small
+ * enough on short phones that the board and keyboard fit under the toolbar.
+ */
+.board {
+  --sl-gap: 5px;
+  --sl-tile: clamp(
+    38px,
+    min(
+      62px,
+      calc((100vw - 48px - 4 * var(--sl-gap)) / 5),
+      calc((100svh - var(--header-h) - var(--toolbar-h) - var(--sl-kb-h, 230px) - 104px - 5 * var(--sl-gap)) / 6)
+    ),
+    62px
+  );
+  display: grid;
+  grid-template-rows: repeat(6, var(--sl-tile));
+  gap: var(--sl-gap);
+  justify-content: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, var(--sl-tile));
+  gap: var(--sl-gap);
+}
+
+.tile {
+  --final: transparent;
+  width: var(--sl-tile);
+  height: var(--sl-tile);
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--sl-empty-border);
+  background: transparent;
+  color: var(--sl-tile-text);
+  user-select: none;
+}
+
+.small {
+  --sl-tile: 34px;
+  border-width: 2px;
+}
+
+.letter {
+  font-size: calc(var(--sl-tile) * 0.52);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  /* Room for the háček / čárka above capitals like Ř, Ů, Ě. */
+  padding-top: calc(var(--sl-tile) * 0.06);
+}
+
+.filled {
+  border-color: var(--sl-filled-border);
+}
+
+.correct,
+.present,
+.accent,
+.absent {
+  background: var(--final);
+  border-color: var(--final);
+  color: var(--sl-revealed-text);
+}
+
+.correct {
+  --final: var(--sl-correct);
+}
+.present {
+  --final: var(--sl-present);
+}
+.accent {
+  --final: var(--sl-accent);
+}
+.absent {
+  --final: var(--sl-absent);
+}
+
+/* Typed letter: quick scale-in. */
+.pop {
+  animation: pop var(--pop-ms, 100ms) ease-in-out;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/*
+ * Reveal: the tile turns edge-on, switches from "typed" to its colour, and
+ * turns back. `backwards` keeps the typed look during the stagger delay.
+ */
+.flip {
+  animation: flip var(--flip-ms, 500ms) linear var(--flip-delay, 0ms) backwards;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+    background: transparent;
+    border-color: var(--sl-filled-border);
+    color: var(--sl-tile-text);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotateX(-90deg);
+    background: transparent;
+    border-color: var(--sl-filled-border);
+    color: var(--sl-tile-text);
+  }
+  50.1% {
+    transform: rotateX(-90deg);
+    background: var(--final);
+    border-color: var(--final);
+    color: var(--sl-revealed-text);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: rotateX(0);
+    background: var(--final);
+    border-color: var(--final);
+    color: var(--sl-revealed-text);
+  }
+}
+
+/* Win: the row jumps tile by tile. */
+.bounce {
+  animation: bounce var(--bounce-ms, 1000ms) ease var(--bounce-delay, 0ms);
+}
+
+@keyframes bounce {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pop,
+  .flip,
+  .bounce {
+    animation: none;
+  }
+}

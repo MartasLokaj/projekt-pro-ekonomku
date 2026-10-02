@@ -1,0 +1,148 @@
+/* Covers the whole page (header included) until the player presses a button. */
+.screen {
+  position: fixed;
+  inset: 0;
+  z-index: 45; /* above header (30) and toolbar (20), below modals (50) and toasts (60) */
+  display: grid;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: max(24px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+  color: var(--text);
+  transition: background-color 0.3s ease;
+}
+
+.spojeni {
+  background: var(--welcome-spojeni);
+}
+
+.slovo {
+  background: var(--welcome-slovo);
+}
+
+.inner {
+  margin: auto;
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ── Mark ────────────────────────────────────────────────────────────────── */
+.markCard {
+  display: grid;
+  place-items: center;
+  width: clamp(76px, 18vw, 92px);
+  aspect-ratio: 1;
+  border: 2.5px solid var(--text);
+  border-radius: 18px;
+  background: var(--surface);
+}
+
+.mark {
+  width: 72%;
+  height: 72%;
+  overflow: visible;
+}
+
+/* ── Text ────────────────────────────────────────────────────────────────── */
+.title {
+  margin-top: clamp(14px, 2.4vh, 20px);
+  font-family: var(--font-display);
+  font-size: clamp(46px, 11vw, 64px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.015em;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.message {
+  margin-top: clamp(12px, 2vh, 18px);
+  max-width: 15em;
+  font-family: var(--font-display);
+  font-size: clamp(25px, 6vw, 34px);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+
+/* ── Buttons: big, round, two of them ────────────────────────────────────── */
+.actions {
+  margin-top: clamp(28px, 5vh, 40px);
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.button {
+  flex: 0 1 216px;
+  min-width: 0;
+  height: 58px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.12s ease;
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+.secondary {
+  border: 1.5px solid var(--btn-border);
+  color: var(--btn-text);
+}
+
+@media (hover: hover) {
+  .primary:hover {
+    background: color-mix(in srgb, var(--btn-primary-bg) 88%, var(--btn-primary-text));
+  }
+  .secondary:hover {
+    background: var(--btn-hover);
+  }
+}
+
+/* Phones: stacked, full width, the main button on top. */
+@media (max-width: 480px) {
+  .actions {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 12px;
+  }
+  .button {
+    flex: none;
+    width: min(100%, 300px);
+  }
+}
+
+/* ── Date / number / difficulty ──────────────────────────────────────────── */
+.meta {
+  margin-top: clamp(28px, 5vh, 40px);
+  display: grid;
+  gap: 3px;
+  font-size: clamp(15px, 2.4vw, 17px);
+  line-height: 1.35;
+}
+
+.date {
+  font-weight: 700;
+}

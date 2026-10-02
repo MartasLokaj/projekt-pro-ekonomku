@@ -1,0 +1,35 @@
+.content {
+  display: grid;
+  gap: 6px;
+  text-align: center;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.message {
+  font-size: 16px;
+}
+
+.meta {
+  margin-bottom: 18px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.divider {
+  width: 100%;
+  margin: 22px 0 18px;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+.note {
+  font-size: 14px;
+  color: var(--text-muted);
+}

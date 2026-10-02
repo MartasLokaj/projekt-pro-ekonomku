@@ -1,0 +1,64 @@
+.app {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+ * The playing area is at least one screen tall, so the page can always scroll
+ * the title out of view and land exactly on the board.
+ */
+.stage {
+  width: 100%;
+  max-width: 672px;
+  min-height: calc(100vh - var(--header-h) - var(--toolbar-h));
+  min-height: calc(100dvh - var(--header-h) - var(--toolbar-h));
+  margin: 0 auto;
+  padding: clamp(28px, 11vh, 124px) 16px calc(clamp(64px, 12vh, 120px) + env(safe-area-inset-bottom));
+}
+
+.loading {
+  display: grid;
+  justify-items: center;
+  gap: 24px;
+  max-width: var(--board-max);
+  margin: 0 auto;
+}
+
+.loadingText {
+  font-size: 18px;
+  color: var(--text-muted);
+}
+
+.message {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  padding: 48px 0;
+  text-align: center;
+}
+
+.messageTitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.messageActions {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
+  border: 1px solid var(--btn-border);
+  font-weight: 600;
+}
+
+/* Circular Words needs room for the board and the keyboard on one screen. */
+.stageSlovo {
+  padding-top: clamp(14px, 3.5svh, 40px);
+  padding-bottom: calc(clamp(24px, 5svh, 56px) + env(safe-area-inset-bottom));
+}

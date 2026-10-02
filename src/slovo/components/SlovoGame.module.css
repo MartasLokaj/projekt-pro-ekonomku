@@ -1,0 +1,61 @@
+.game {
+  /* Keyboard metrics — the board shrinks on short screens to leave room for it. */
+  --sl-key-h: clamp(42px, 7svh, 58px);
+  --sl-kb-gap: 8px;
+  --sl-kb-h: calc(3 * var(--sl-key-h) + 2 * var(--sl-kb-gap));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(16px, 3.2svh, 28px);
+}
+
+
+
+.bottom {
+  width: 100%;
+  min-height: var(--sl-kb-h);
+  display: flex;
+  justify-content: center;
+}
+
+.kbWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.done {
+  width: 100%;
+  max-width: 500px;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+/* "Word 3 of 118" above the board */
+.counter {
+  margin-bottom: calc(-1 * clamp(6px, 1.6svh, 14px));
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.secondary {
+  height: 44px;
+  min-width: 180px;
+  padding: 0 22px;
+  border-radius: 999px;
+  border: 1px solid var(--text);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media (hover: hover) {
+  .secondary:hover {
+    background: var(--btn-hover);
+  }
+}
+

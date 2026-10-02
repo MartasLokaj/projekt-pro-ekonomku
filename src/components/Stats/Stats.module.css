@@ -1,0 +1,95 @@
+.panel {
+  display: grid;
+  gap: 22px;
+}
+
+.numbers {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.number {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2px;
+}
+
+.value {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--text-muted);
+}
+
+.subTitle {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.distribution {
+  display: grid;
+  gap: 6px;
+}
+
+.empty {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.barLabel {
+  color: var(--text-muted);
+}
+
+.barTrack {
+  min-width: 0;
+}
+
+.bar {
+  min-width: 26px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: var(--tile-selected-border);
+  color: var(--surface);
+  font-weight: 700;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.barActive {
+  background: var(--bar-active, var(--green));
+  color: var(--bar-active-text, var(--on-category));
+}
+
+.countdown {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.time {
+  color: var(--text);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}

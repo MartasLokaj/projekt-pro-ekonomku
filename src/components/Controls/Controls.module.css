@@ -1,0 +1,48 @@
+.slot {
+  min-height: 48px;
+  display: grid;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.button {
+  height: 48px;
+  padding: 0 clamp(14px, 3.8vw, 22px);
+  border-radius: 999px;
+  border: 1px solid var(--btn-border);
+  background: transparent;
+  color: var(--btn-text);
+  font-size: clamp(15px, 4vw, 17px);
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+@media (hover: hover) {
+  .button:not(:disabled):not(.primary):hover {
+    background: var(--btn-hover);
+  }
+  .primary:not(:disabled):hover {
+    opacity: 0.88;
+  }
+}
+
+.button:disabled {
+  border-color: var(--btn-disabled);
+  color: var(--btn-disabled);
+}
+
+.primary {
+  background: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
